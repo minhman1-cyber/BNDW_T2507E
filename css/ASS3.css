@@ -1,0 +1,10 @@
+.row1{
+    background-color: cadetblue;
+}
+
+.frame{
+    border: 2px solid #fff; padding: 4px; display: flex; justify-content: center; align-items: center;
+}
+img{
+    width: 100%;
+}
