@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo display</title>
+  <style>
+    .demo {
+      border: 1px solid #333;
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    .box {
+      background: lightblue;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    /* block */
+    .block .box {
+      display: block;
+      width: 120px;
+    }
+
+    /* inline-block */
+    .inline-block .box {
+      display: inline-block;
+      width: 120px;
+      height: 60px;
+      background: lightgreen;
+    }
+
+    /* flex */
+    .flex {
+      display: flex;
+      gap: 10px;
+      background: lightcoral;
+    }
+    .flex .box {
+      background: white;
+      padding: 20px;
+    }
+
+    /* inline-flex */
+    .inline-flex {
+      display: inline-flex;
+      gap: 10px;
+      background: lightyellow;
+      padding: 10px;
+    }
+    .inline-flex .box {
+      background: white;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <h2>1. display: block</h2>
+  <div class="demo block" style="display: block;">
+    <div class="box">Box 1</div>
+    <div class="box" style="display: flex;">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <h2>2. display: inline-block</h2>
+  <div class="demo inline-block" >
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <h2>3. display: flex</h2>
+  <div class="demo flex">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+  <h2>4. display: inline-flex (nằm trong 1 đoạn text)</h2>
+  <p>
+    Văn bản trước 
+    <span class="inline-flex">
+      <span class="box">A</span>
+      <span class="box">B</span>
+      <span class="box">C</span>
+    </span> 
+    văn bản sau.
+  </p>
+  
+</body>
+</html>
