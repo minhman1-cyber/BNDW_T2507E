@@ -1,0 +1,333 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Logo */
+.navbar .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+
+/* Menu */
+.navbar .menu {
+    display: flex;
+    gap: 25px;
+    height: fit-content;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;    
+}
+
+/* Right side */
+.navbar .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.navbar .right a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+/* Cart badge */
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background: #133d2c;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Icons (search & user) */
+.icon {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Coupon section */
+/* Nút "Click here to enter your code" */
+a.showcoupon {
+    display: inline-block;
+    background-color: #2f5248;
+    /* màu nền như Apply coupon */
+    color: #fff !important;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    line-height: normal;
+    transition: background-color 0.3s ease;
+}
+
+a.showcoupon:hover {
+    background-color: #244038;
+    /* hover */
+    color: #fff !important;
+}
+
+/* Input coupon */
+.woocommerce-form-coupon input.input-text {
+    width: 97.5%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Nút Apply coupon */
+.woocommerce-form-coupon .button {
+    background-color: #2f5248;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.woocommerce-form-coupon .button:hover {
+    background-color: #244038;
+}
+
+.woocommerce-form-coupon-toggle-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: solid 1px rgb(221, 217, 217);
+}
+
+
+.btn {
+    display: inline-block;
+    background: #1f4f36;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.checkout-grid h3 {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Order summary */
+.order {
+    margin-bottom: 40px;
+}
+
+.order table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order table th,
+.order table td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    width: 50%;
+}
+
+.order-total {
+    font-weight: bold;
+}
+
+/* Payment options */
+.payment {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem
+}
+
+.payment li {
+  margin-bottom: 10px;
+}
+
+.moreInfo {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 10px;
+}
+
+/* khi radio checked thì mở moreInfo đi kèm */
+.payment input[type="radio"]:checked ~ .moreInfo {
+  max-height: 200px; /* đủ lớn để chứa nội dung */
+  padding: 10px;
+}
+
+/* Place order button */
+.place-order {
+    background: #1f4f36;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.shipping_label{
+    font-size: 2rem;
+    color: #1f4f36;
+    padding: 8px 0px;
+}
+
+.fake_radio{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid #333;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.fake_radio:checked::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 3px;
+}
+hr {
+  border: none;            /* bỏ border mặc định */
+  height: 0.5px;             /* độ dày */
+  background-color: rgb(185, 178, 178); /* màu */
+  margin: 20px 0;          /* khoảng cách trên dưới (tùy chỉnh) */
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0;
+    background-color: #fff;
+    color: #111;
+    font-size: 16px;
+    line-height: 2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer ul li:hover {
+    color: #c94b6a; /* màu nhấn khi hover */
+}
+
+.footer-01, .footer-03 {
+    font-size: 15px;
+}
+
+.footer-02 {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 0 20px;
+}
+
+.footer-02 h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-02 p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.footer-02 .divider {
+    font-size: 18px;
+    margin: 15px 0;
+    display: block;
+}
+
+.footer-04 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    color: #666;
+}
+

@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Logo */
+.navbar .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+
+/* Menu */
+.navbar .menu {
+    display: flex;
+    gap: 25px;
+    height: fit-content;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;    
+}
+
+/* Right side */
+.navbar .right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.navbar .right a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+/* Cart badge */
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background: #133d2c;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Icons (search & user) */
+.icon {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 20px 40px;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #222;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+/* Cart Table */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333;
+}
+
+td img {
+    max-width: 60px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+td a {
+    color: #222;
+    text-decoration: none;
+}
+
+/* Quantity control */
+.quantity {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.quantity button {
+    background: #fff;
+    border: none;
+    width: 20px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.2s;
+}
+
+.quantity button:hover {
+    background: #f0f0f0;
+}
+
+.quantity input {
+    border: none;
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+
+/* Coupon & Update */
+.cart-actions {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-actions input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+}
+
+.cart-actions button {
+    padding: 10px 20px;
+    background: #033d2c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-totals {
+    width: 75%;
+    margin: 40px auto;
+}
+
+.cart-totals h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.cart-totals table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-totals th,
+.cart-totals td {
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.cart-totals th {
+    text-align: left;
+    font-weight: normal;
+}
+
+.cart-totals td {
+    text-align: right;
+}
+
+.cart-totals td a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.checkout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #133d2c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0;
+    background-color: #fff;
+    color: #111;
+    font-size: 16px;
+    line-height: 2;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer ul li:hover {
+    color: #c94b6a; /* màu nhấn khi hover */
+}
+
+.footer-01, .footer-03 {
+    font-size: 15px;
+}
+
+.footer-02 {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 0 20px;
+}
+
+.footer-02 h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-02 p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.footer-02 .divider {
+    font-size: 18px;
+    margin: 15px 0;
+    display: block;
+}
+
+.footer-04 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    color: #666;
+}

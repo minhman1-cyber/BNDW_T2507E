@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/Ass3_Cart.css">
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div style="display: flex; align-items: center;">
+            <!-- Logo -->
+            <a href="#" class="logo">PEONY</a>
+
+            <!-- Menu -->
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Pages</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">Landing</a>
+            </div>
+        </div>
+
+
+        <!-- Right side -->
+        <div class="right">
+            <a href="#">Wishlist</a>
+            <a href="#">
+                Cart <span class="cart-badge">4</span>
+            </a>
+            <i class="fa fa-search icon"></i>
+            <i class="fa fa-user icon"></i>
+        </div>
+    </nav>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="#">Home</a> / <span>Cart</span>
+    </div>
+
+    <!-- Cart Section -->
+    <main>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <form action="" style="width: 80%;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Product 1 -->
+                        <tr>
+                            <td><a href="#">×</a></td>
+                            <td>
+                                <a href="#">
+                                    <img src="https://peony.qodeinteractive.com/wp-content/uploads/2023/08/shop-img-03-300x300.jpg"
+                                        alt="Sencha">
+                                </a>
+                            </td>
+                            <td><a href="#">Sencha</a></td>
+                            <td>$37</td>
+                            <td>
+                                <div class="quantity">
+                                    <button type="button">&lt;</button>
+                                    <input type="text" value="3">
+                                    <button type="button">&gt;</button>
+                                </div>
+                            </td>
+                            <td>$111</td>
+                        </tr>
+
+                        <!-- Product 2 -->
+                        <tr>
+                            <td><a href="#">×</a></td>
+                            <td>
+                                <a href="#">
+                                    <img src="https://peony.qodeinteractive.com/wp-content/uploads/2023/08/shop-img-13-300x300.jpg"
+                                        alt="Tencha">
+                                </a>
+                            </td>
+                            <td><a href="#">Tencha</a></td>
+                            <td>$51</td>
+                            <td>
+                                <div class="quantity">
+                                    <button type="button">&lt;</button>
+                                    <input type="text" value="1">
+                                    <button type="button">&gt;</button>
+                                </div>
+                            </td>
+                            <td>$51</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Coupon + Update -->
+                <div class="cart-actions">
+                    <div>
+                        <input type="text" placeholder="Coupon code">
+                        <button type="button">Apply coupon</button>
+                    </div>
+                    <button type="button">Update cart</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="cart-totals">
+            <h2>Cart totals</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Subtotal</th>
+                        <td>$162</td>
+                    </tr>
+                    <tr>
+                        <th>Shipping</th>
+                        <td>
+                            No shipping options were found for <strong>zxcvzxcv, zvcvxvc, zxcvzxcv, zxcvzxcxc,
+                                Uzbekistan.</strong><br>
+                            <a href="#">Enter a different address</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td>$162</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#" class="checkout-btn">Proceed to checkout</a>
+        </div>
+    </main>
+
+    <footer class="section footer">
+        <div class="footer-container">
+            <div class="footer-01">
+                <ul>
+                    <li>Clients</li>
+                    <li>Work</li>
+                    <li>Expertise</li>
+                    <li>Leadership</li>
+                    <li>Press</li>
+                    <li>Contact</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+
+            <div class="footer-02">
+                <h3>PEONY</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>adipisci elitetede, sed do eiusmod tempor</p>
+                <p class="divider">✦</p>
+                <p>27 Rue du Aire 60000 Tillé, France</p>
+                <p>+589 55668 8569 44</p>
+                <p>peony@qodeinteractive.com</p>
+            </div>
+
+            <div class="footer-03">
+                <ul>
+                    <li>About</li>
+                    <li>Certification</li>
+                    <li>Rewards</li>
+                    <li>Education</li>
+                    <li>Retreats</li>
+                    <li>International</li>
+                    <li>Specials</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <div class="footer-04">
+        <p>© 2023 Qode Interactive, All Rights Reserved</p>
+    </div>
+</body>
+
+</html>
